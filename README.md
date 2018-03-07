@@ -29,25 +29,28 @@ English - American as language and make default
 Collation - American,United_States,ISO8859-1,Basic,Basic  
 Date format - dmy   
 Number format - (comma, period)  
-Copy the scripts - yes  
+Copy the scripts - No  
 
 ### Do an install for the appserver
 
-OpenEdge Enterprise RDBMS  
+OpenEdge Application Server  
 Say No to enabling explorer  
-Continue with sql enabled  
+Say No to using Sonic ESB  
+Say No to Webspeed  
 English - American as language and make default  
-Collation - American,United_States,ISO8859-1,Basic,Basic  
+Charset,CollationCase - American,United_States,ISO8859-1,Basic,Basic  
 Date format - dmy  
 Number format - (comma, period)  
-Copy the scripts - yes  
+Web Services Adapter URL - <http://localhost:80/wsa/wsa1>  
+WSA Authentication - No  
+Copy the scripts - No  
 
 ### Copy the response.ini, progress.cfg & ubroker.properties from the install to use in other images
 
 ```bash
 docker cp oe117-setup:/usr/dlc/install/response.ini .
 docker cp oe117-setup:/usr/dlc/progress.cfg .
-docker cp oe117-setup:/usr/dlc/ubroker.properties .
+docker cp oe117-setup:/usr/dlc/properties/ubroker.properties .
 ```
 
 ### Stop the container
