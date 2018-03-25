@@ -2,8 +2,8 @@
 FROM busybox:1.28.1 AS install_files
 
 # which version are we installing from
-ARG INSTALL_FILE=PROGRESS_OE_11.7_LNX_64_EVAL.tar.gz
-ARG HFS_ROOT=http://192.168.0.10
+ARG INSTALL_FILE=PROGRESS_OE_11.7.2_LNX_64.tar.gz
+ARG HFS_ROOT=http://docker.for.win.localhost
 
 LABEL org.label-schema.docker.schema-version="1.0"
 LABEL org.label-schema.name="docker-oe117-setup"
