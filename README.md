@@ -1,17 +1,17 @@
-# docker-oe117-setup
+# docker-oe116-setup
 
 ## docker commands
 
 ### Build the docker image
 
 ```bash
-docker build -t oe117-setup:0.1 -t oe117-setup:latest .
+docker build -t oe116-setup:0.1 -t oe116-setup:latest .
 ```
 
 ### Run the container
 
 ```bash
-docker run -it --rm --name oe117-setup oe117-setup:latest bash
+docker run -it --rm --name oe116-setup oe116-setup:latest bash
 ```
 
 ### Install openedge in the container
@@ -68,21 +68,21 @@ Copy the scripts - No
 ### Copy the response.ini, progress.cfg & ubroker.properties from the install to use in other images
 
 ```bash
-docker cp oe117-setup:/usr/dlc/install/response.ini conf/
-docker cp oe117-setup:/usr/dlc/progress.cfg conf/
-docker cp oe117-setup:/usr/dlc/properties/ubroker.properties conf/
+docker cp oe116-setup:/usr/dlc/install/response.ini conf/
+docker cp oe116-setup:/usr/dlc/progress.cfg conf/
+docker cp oe116-setup:/usr/dlc/properties/ubroker.properties conf/
 ```
 
 ### Stop the container
 
 ```bash
-docker stop oe117-setup
+docker stop oe116-setup
 ```
 
 ### Clean the container
 
 ```bash
-docker rm oe117-setup
+docker rm oe116-setup
 ```
 
 - - -
