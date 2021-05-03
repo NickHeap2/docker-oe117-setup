@@ -5,13 +5,13 @@ FROM busybox:1.28.1 AS install_files
 ARG INSTALL_FILE=PROGRESS_OE_11.7.2_LNX_64.tar.gz
 ARG HFS_ROOT=http://docker.for.win.localhost
 
-LABEL org.label-schema.docker.schema-version="1.0"
-LABEL org.label-schema.name="docker-oe117-setup"
-LABEL org.label-schema.description="OpenEdge setup image for generating response.ini files."
-LABEL org.label-schema.vendor="Nick Heap"
-LABEL org.label-schema.url="https://github.com/NickHeap/docker-oe117-setup"
-LABEL org.label-schema.vcs-url="github.com:NickHeap/docker-oe117-setup.git"
-LABEL org.label-schema.version="0.1"
+LABEL org.label-schema.docker.schema-version="1.0" \
+ org.label-schema.name="docker-oe117-setup" \
+ org.label-schema.description="OpenEdge setup image for generating response.ini files." \
+ org.label-schema.vendor="Nick Heap" \
+ org.label-schema.url="https://github.com/NickHeap/docker-oe117-setup" \
+ org.label-schema.vcs-url="github.com:NickHeap/docker-oe117-setup.git" \
+ org.label-schema.version="0.1"
 
 RUN mkdir -p /install/openedge/
 
